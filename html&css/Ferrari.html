@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Main1{
+            width:100vw;
+            height:100vh;
+            background-color: black;
+            position: relative;
+            margin:0px;
+        }
+        .Sub11{
+            width:100vw;
+            height:75vh;
+            background-color: blueviolet;
+            position: absolute;
+            top:0vw;
+            left:0vh;
+        }
+        .Sub11 img{
+            width:100vw;
+            height:75vh;
+        }
+        .Sub12{
+            width:100vw;
+            height:25vh;
+            background-color: brown;
+            position: absolute;
+            top: 75vh;
+            left:0vw;
+            overflow: hidden;
+            transition: all 2s ease-in-out;
+        }
+        .Sub12 img{
+            width:100vw;
+            height:75vh;
+        }
+        .Main1:hover .Sub12{
+            height:75vh;
+            top:25vh;;
+        }
+        .Sub13{
+            position: absolute;
+            top:3vh;
+            right:5vw;
+            color:white;
+            font-size: x-large;
+        }
+        .Sub13 td{
+            padding-left: 50px;
+        }
+        .Sub14{
+            width:100vw;
+            height:25vh;
+            position: absolute;
+            bottom:45vh;
+            left: -10vw;
+            font-size: 200px;
+            text-align: center;
+            color:whitesmoke;
+        }
+        .Main1:hover .Sub14{
+            left:0vw;
+            bottom:15vh;
+            transition: all 2s ease-in-out;
+        }
+        .Sub15{
+            position: absolute;
+            top: 2vh;
+            left: 2vw;
+        }
+        .Sub15 img{
+            width:150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Main1">
+        <div class="Sub11">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_UR_V4KqsYWqFeOwcyRJYh28kjwBfkJgnxvmhqVJKNg&s=10">
+        </div>
+        <div class="Sub12">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFZbDVVuuYF6fiLicT-WjQaL3lCkTDIbsPWVUywMuvSw&s=10">
+        </div>
+        <div class="Sub13">
+            <table>
+                <tr>
+                    <td>Home</td>
+                    <td>Models</td>
+                    <td>Booking</td>
+                    <td>Racing</td>
+                    <td>Product</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Sub14">
+            F E R R A R I
+        </div>
+        <div class="Sub15">
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Ferrari-Emblem.png">
+        </div>
+    </div> 
+</body>
+</html>
