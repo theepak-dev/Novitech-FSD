@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body{
+            margin:0;
+            background: linear-gradient(to right, blue, black);
+
+        }
+        .box1{
+            text-align: center;
+            width: 100vw;
+            font-size: 50px;
+            color:white;
+        }
+        .box2{
+            width: 40vw;
+            height:50vh;
+            background-color: rgb(0,0,41);
+            font-size: x-large;
+            text-align: center;
+            color: white;
+            border-radius: 30px;
+        }
+        .box3{
+            width: 40vw;
+            height:50vh;
+            overflow: hidden;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .box4{
+            font-size: 30px;
+            color:white;
+            text-align: center;
+        }
+        .box2 button{
+            width: 300px;
+            height: 40px;
+            font-size: large;
+            border-radius: 30px;
+        }
+        @media (max-width: 500px){
+            .box1{
+                font-size: 25px;
+            }
+            .box2{
+                margin-top: 5vh;
+                width: 90%;
+                font-size: 16px;
+            }
+            .box3{
+                width: 90vw;
+                height: 40vh;
+            }
+            .box4{
+                font-size: 25px;
+            }
+            .container{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>T H E E P A K</h1>
+    </div>
+
+    <div class="container">
+    <div class="box2">
+        <h1>THEEPAK C G</h1>
+        <h2>AI Engineer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis quisquam voluptatem minus mollitia sit quidem asperiores voluptas, odit, doloribus nihil expedita quibusdam praesentium aspernatur ipsa, ab debitis architecto tempora.</p>
+        <button>Explore</button>
+    </div>
+    <div class="box3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbSoDoynjj8AhK2bS05AbTn47676o83DQQzXk8Y2Ix-Q&s=10">
+    </div>
+    </div>
+    <div class="box4">
+        <h2>theepakeceskct@gmail.com</h2>
+    </div>
+    <div class="container1">
+        <div class="project"></div>
+        <div class="project"></div>
+        <div class="project"></div>
+        <div class="project"></div>
+    </div>
+</body>
+</html>
