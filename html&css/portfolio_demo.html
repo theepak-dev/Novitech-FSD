@@ -7,7 +7,7 @@
     <style>
         body{
             margin:0;
-            background: linear-gradient(to right, blue, black);
+            background-color: rgb(0, 0, 12);
 
         }
         .box1{
@@ -15,39 +15,79 @@
             width: 100vw;
             font-size: 50px;
             color:white;
+            justify-content: center;
+            white-space: nowrap;
         }
         .box2{
+            margin: 0px;
             width: 40vw;
             height:50vh;
-            background-color: rgb(0,0,41);
+            background-color: rgb(198, 198, 204);
             font-size: x-large;
             text-align: center;
-            color: white;
+            color: rgb(0, 0, 12);
             border-radius: 30px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            white-space: nowrap;
         }
         .box3{
             width: 40vw;
             height:50vh;
             overflow: hidden;
         }
+        .box3 img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            border-radius: 50px;
+        }
         .container{
             display: flex;
             justify-content: space-around;
             align-items: center;
-
         }
         .box4{
             font-size: 30px;
             color:white;
             text-align: center;
+            white-space: nowrap;
         }
         .box2 button{
             width: 300px;
             height: 40px;
             font-size: large;
             border-radius: 30px;
+            background-color: rgb(0, 0, 12);
+            color:white;
+            justify-content: center;
+            box-sizing: border-box;
         }
-        @media (max-width: 500px){
+        .box2 p{
+                white-space: normal;
+            }
+        .container1{
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+        }
+        .project{
+            width: 20vw;
+            background-color: rgb(198, 198, 204);
+            height: 30vh;
+            border-radius: 30px;
+        }
+        .project img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 30px;
+
+            }
+        @media (max-width: 850px){
             .box1{
                 font-size: 25px;
             }
@@ -57,6 +97,7 @@
                 font-size: 16px;
             }
             .box3{
+                margin-top: 5vh;
                 width: 90vw;
                 height: 40vh;
             }
@@ -64,12 +105,25 @@
                 font-size: 25px;
             }
             .container{
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .container1{
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
 
             }
+            .project{
+                width: 90vw;
+                height: 40vh;
+                margin-top: 5vh;
+
+            }
         }
+            
 
     </style>
 </head>
@@ -82,21 +136,21 @@
     <div class="box2">
         <h1>THEEPAK C G</h1>
         <h2>AI Engineer</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis quisquam voluptatem minus mollitia sit quidem asperiores voluptas, odit, doloribus nihil expedita quibusdam praesentium aspernatur ipsa, ab debitis architecto tempora.</p>
+        <p>Curious and Ever Learning AI Engineer and FSD </p>
         <button>Explore</button>
     </div>
     <div class="box3">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbSoDoynjj8AhK2bS05AbTn47676o83DQQzXk8Y2Ix-Q&s=10">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbSoDoynjj8AhK2bS05AbTn47676o83DQQzXk8Y2Ix-Q&s=10" alt="Harvey Specter Image">
     </div>
     </div>
     <div class="box4">
         <h2>theepakeceskct@gmail.com</h2>
     </div>
     <div class="container1">
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+    <div class="project"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLtObQGyW60Jo0L_t-owVnoKM1XH_s9bHAuVe5MH-YQ&s=10" alt="Image" srcset=""></div>
+    <div class="project"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGHuZHeO2yWcVS3EdPbLou31tYRku3lY7Ir48WKC_5Bg&s=10" alt="Image" srcset=""></div>
+    <div class="project"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBa4Du_1aDe1TkkMCCnpbKEdJbHwdFuE_8J6NcorZdcQ&s=10" alt="Image" srcset=""></div>
+    <div class="project"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiwGjCz3f66Xi1xjsoPr-R1t0ds_o0idGo7HHV1V0Mhg&s=10" alt="Image" srcset=""></div>
     </div>
 </body>
 </html>
