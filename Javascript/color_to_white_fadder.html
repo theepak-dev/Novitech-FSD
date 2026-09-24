@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+            margin: 0;
+        }
+        .main{
+            width: 80vw;
+            height: 90vh;
+            background-color: gainsboro;
+            position: relative;
+            top: 5vh;
+            left: 10vh;;
+        }
+        .box1{
+            width: 30vw;
+            height: 60vh;
+            background-color: blueviolet;
+            position: absolute;
+            right: 5vw;
+            top: 15vh;
+            border-radius: 50px;
+        }
+        .box1 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+        .box2{
+            width: 20vw;
+            height: 20vh;
+            border: 5px solid black;
+            position: absolute;
+            left: 5vw;
+            top: 15vh;
+        }
+        .box3{
+            width: 20vw;
+            height: 20vh;
+            border: 5px solid black;
+            position: absolute;
+            left: 5vw;
+            bottom: 15vh;
+        }
+        .color1{
+            width: 20vw;
+            height: 10vh;
+            background-color: rgb(255, 0, 0);
+        }
+        .color2{
+            width: 20vw;
+            height: 10vh;
+            background-color: rgb(0, 0, 255);
+        }
+        button{
+            width: 20vw;
+            height: 10vh;
+            background-color: black;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Color to white Fadder</h1>
+
+        <div class="box1">
+            <img src="https://linkbroker.hu/stuff/kolorwheel.js/wheel.png" alt="Color Palette Image">
+        </div>
+        <div class="box2">
+            <div class="color1"></div>
+            <button id="B1" onclick="changeTop()">change</button>
+        </div>
+        <div class="box3">
+            <div class="color2"></div>
+            <button id="B2" onclick="changeBottom()">change</button>
+        </div>
+
+    </div>
+    
+</body>
+<script>
+    let r1 = 1;
+    let g1 = 1;
+    let b1 = 1;
+    let count1 = 0;
+
+    let r2 = 1;
+    let g2 = 1;
+    let b2 = 1;
+    let count2 = 0;
+
+    function changeBottom(){
+        count2 = count2 + 10;
+        r2 = r2 + count2;
+        g2 = g2 + count2;
+        b2 = 255;
+        document.getElementsByClassName('color2')[0].style.backgroundColor = `rgb(${r2},${g2},${b2})`
+    }
+
+    function changeTop(){
+        count1 = count1 + 10;
+        r1 = 255;
+        g1 = g1 + count1;
+        b1 = b1 + count1;
+        document.getElementsByClassName('color1')[0].style.backgroundColor = `rgb(${r1},${g1},${b1})`
+    }
+
+</script>
+</html>
