@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighting Mode</title>
+    <style>
+        .body{
+            background-color: white;
+        }
+        #Heading{
+            text-align: center;
+            font-size: 100px;
+            background-color: rgb(231, 231, 231);
+            color: black;
+            justify-content: center;
+        }
+        #light_mode{
+            background-color: white;
+            color:black;
+            font-size: x-large;
+            text-align: center;
+            width: 20vw;
+            height:10vh;
+            border-radius: 30px;
+        }
+        #dark_mode{
+            background-color: black;
+            color:white;
+            font-size: x-large;
+            text-align: center;
+            width: 20vw;
+            height:10vh;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Heading">Lighting Mode</h1>
+    <button id="light_mode">Light Mode</button>
+    <button id="dark_mode">Dark Mode</button>
+</body>
+<script>
+    document.getElementById("light_mode").onclick = function(){
+        document.getElementById("Heading").style.backgroundColor = "rgb(231, 231, 231)";
+        document.getElementById("Heading").style.color = "black";
+        document.body.style.backgroundColor = "white"
+    }
+    document.getElementById("dark_mode").onclick = function(){
+        document.getElementById("Heading").style.backgroundColor = "black";
+        document.getElementById("Heading").style.color = "rgb(231, 231, 231)";
+        document.body.style.backgroundColor = "rgb(34, 34, 34)"
+    }
+</script>
+</html>
