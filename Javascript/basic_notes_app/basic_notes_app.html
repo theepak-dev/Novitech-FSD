@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App - Local Storage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="basic_notes_app.css">
+    <script src="basic_notes_app.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <h1>Local Storage Notes</h1>
+        
+        <input type="text" id="userkey" placeholder="Enter title">
+        <input type="text" id="userdata" placeholder="Enter value">
+        <button onclick="addData()">Add Note</button>
+
+        <div class="divider"></div>
+
+        <div class="section-title">Saved Output</div>
+        <input type="text" id="usersearch" placeholder="Search by title...">
+        <div id="returndata">
+            Data will appear here...
+        </div>
+
+        <button onclick="getData()">Search Note</button>
+        <button onclick="deleteAllData()">Delete All Notes</button>
+    </div>
+</body>
+</html>
